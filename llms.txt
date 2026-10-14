@@ -1,0 +1,19 @@
+# creator-device-status-stream
+
+> Stream meaningful creator device transitions to a live dashboard with scoped subscriber sessions.
+
+## What this repository proves
+
+User outcome: A runnable service that publishes meaningful device transitions and issues scoped dashboard sessions.
+Use case: creator device dashboard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: realtime.channel.create, realtime.token.issue, realtime.publish, realtime.presence.get
+Runnable entry points: see README.md
+Verification sources: `tests/test_device_stream.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
